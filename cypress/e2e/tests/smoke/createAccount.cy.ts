@@ -49,7 +49,7 @@ describe('Creating an account on the website https://magento.softwaretestingboar
 });
 
 
-describe.only('Signing in with new account', () => {
+describe('Signing in with new account', () => {
 
     const createAccount = new CreateAccount();
 
