@@ -1,0 +1,20 @@
+{
+  "name": "assessment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    
+    "cy:open": "cypress open --config-file=./cypress.config.ts",
+
+    "cy:run": "cypress run --config-file=./cypress.config.ts",
+    "cy:run:smoke:chrome": "cypress run --config-file=./cypress.config.ts -b chrome --spec=./cypress/e2e/tests/smoke/*.cy.ts",
+    "cy:run:regression:chrome": "cypress run --config-file=./cypress.config.ts -b chrome --spec=./cypress/e2e/tests/regression/*.cy.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.13.2",
+    "typescript": "^5.5.4"
+  }
+}
